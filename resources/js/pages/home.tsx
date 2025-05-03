@@ -135,8 +135,7 @@ export default function Home({ auth, recommendedMenus }: HomeProps) {
             </video>
           </div>
 
-          {/* Animated Grain Overlay */}
-          <div className="absolute inset-0 z-5 opacity-20 pointer-events-none bg-[url('/noise.png')] bg-repeat"></div>
+
 
           {/* Hero Content with Staggered Animation */}
           <div className="relative z-20 flex flex-col items-center justify-center h-full px-4 sm:px-6 lg:px-8">

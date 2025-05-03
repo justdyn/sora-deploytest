@@ -160,7 +160,7 @@ export default function Menu({ auth }: MenuProps) {
         <div className="relative h-[40vh] max-h-[500px] min-h-[300px] overflow-hidden mb-12">
           <div className="absolute inset-0">
             <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/40 z-10"></div>
-            <div className="absolute inset-0 bg-[url('images/cook2.jpg')] bg-cover bg-center bg-no-repeat transform scale-105 animate-slow-zoom"></div>
+            <div className="absolute inset-0 bg-[url('/images/cook2.jpg')] bg-cover bg-center bg-no-repeat transform scale-105 animate-slow-zoom"></div>
           </div>
           <div className="absolute inset-0 z-20 flex flex-col items-start justify-center px-6 md:px-12 lg:px-20 max-w-7xl mx-auto">
             <div className="max-w-xl">
