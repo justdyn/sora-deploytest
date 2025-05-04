@@ -15,7 +15,7 @@
         { "src": "/(.*)", "dest": "/api/index.php" }
     ],
     "public": true,
-    "buildCommand": "curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && composer install --no-dev --prefer-dist --optimize-autoloader --no-interaction && npm install && npm run build",
+    "buildCommand": "apt-get update && apt-get install -y php8.2-cli php8.2-common php8.2-curl php8.2-mbstring php8.2-mysql php8.2-xml php8.2-zip && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && composer install --no-dev --prefer-dist --optimize-autoloader --no-interaction && npm install && npm run build",
     "outputDirectory": "public",
     "env": {
         "APP_ENV": "production",
