@@ -15,7 +15,7 @@
         { "src": "/(.*)", "dest": "/api/index.php" }
     ],
     "public": true,
-    "buildCommand": "npm install && npm run build",
+    "buildCommand": "curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && composer install --no-dev --prefer-dist --optimize-autoloader --no-interaction && npm install && npm run build",
     "outputDirectory": "public",
     "env": {
         "APP_ENV": "production",

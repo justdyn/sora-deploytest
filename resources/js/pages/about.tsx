@@ -63,9 +63,6 @@ export default function About({ auth }: AboutProps) {
             />
           </div>
 
-          {/* Animated Grain Overlay */}
-          <div className="absolute inset-0 z-5 opacity-20 pointer-events-none bg-[url('/noise.png')] bg-repeat"></div>
-
           {/* Hero Content */}
           <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <motion.div
@@ -487,14 +484,6 @@ export default function About({ auth }: AboutProps) {
       </main>
 
       <Footer />
-
-      {/* Add noise texture SVG */}
-      <svg className="hidden">
-        <filter id="noise">
-          <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
-          <feColorMatrix type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0" />
-        </filter>
-      </svg>
     </>
   )
 }
